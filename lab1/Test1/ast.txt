@@ -1,0 +1,86 @@
+|-UsingDirectiveDecl 0x1f6f9b0 <fibonacci.cpp:2:1, col:17> col:17 Namespace 0x1558310 'std'
+`-FunctionDecl 0x1f6fa30 <line:3:1, line:19:1> line:3:5 main 'int ()'
+  `-CompoundStmt 0x1f7d4b0 <col:12, line:19:1>
+    |-DeclStmt 0x1f6fd80 <line:4:5, col:22>
+    | |-VarDecl 0x1f6fae8 <col:5, col:9> col:9 used a 'int'
+    | |-VarDecl 0x1f6fb68 <col:5, col:12> col:12 used b 'int'
+    | |-VarDecl 0x1f6fbe8 <col:5, col:15> col:15 used i 'int'
+    | |-VarDecl 0x1f6fc68 <col:5, col:18> col:18 used t 'int'
+    | `-VarDecl 0x1f6fce8 <col:5, col:21> col:21 used n 'int'
+    |-BinaryOperator 0x1f6fdd8 <line:5:5, col:9> 'int' lvalue '='
+    | |-DeclRefExpr 0x1f6fd98 <col:5> 'int' lvalue Var 0x1f6fae8 'a' 'int'
+    | `-IntegerLiteral 0x1f6fdb8 <col:9> 'int' 0
+    |-BinaryOperator 0x1f6fe38 <line:6:5, col:9> 'int' lvalue '='
+    | |-DeclRefExpr 0x1f6fdf8 <col:5> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    | `-IntegerLiteral 0x1f6fe18 <col:9> 'int' 1
+    |-BinaryOperator 0x1f6fe98 <line:7:5, col:9> 'int' lvalue '='
+    | |-DeclRefExpr 0x1f6fe58 <col:5> 'int' lvalue Var 0x1f6fbe8 'i' 'int'
+    | `-IntegerLiteral 0x1f6fe78 <col:9> 'int' 1
+    |-CXXOperatorCallExpr 0x1f71830 <line:8:5, col:12> 'std::basic_istream<char, std::char_traits<char> >::__istream_type':'std::basic_istream<char>' lvalue
+    | |-ImplicitCastExpr 0x1f71818 <col:9> 'std::basic_istream<char, std::char_traits<char> >::__istream_type &(*)(int &)' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x1f717a0 <col:9> 'std::basic_istream<char, std::char_traits<char> >::__istream_type &(int &)' lvalue CXXMethod 0x1f007a8 'operator>>' 'std::basic_istream<char, std::char_traits<char> >::__istream_type &(int &)'
+    | |-DeclRefExpr 0x1f6feb8 <col:5> 'std::istream':'std::basic_istream<char>' lvalue Var 0x1f6f4e0 'cin' 'std::istream':'std::basic_istream<char>'
+    | `-DeclRefExpr 0x1f6fed8 <col:12> 'int' lvalue Var 0x1f6fce8 'n' 'int'
+    |-CXXOperatorCallExpr 0x1f79120 <line:9:5, col:18> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    | |-ImplicitCastExpr 0x1f79108 <col:15> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x1f79088 <col:15> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' lvalue CXXMethod 0x1ed6018 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'
+    | |-CXXOperatorCallExpr 0x1f786e0 <col:5, col:13> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    | | |-ImplicitCastExpr 0x1f786c8 <col:10> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(int)' <FunctionToPointerDecay>
+    | | | `-DeclRefExpr 0x1f78648 <col:10> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)' lvalue CXXMethod 0x1ed6f78 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'
+    | | |-DeclRefExpr 0x1f71868 <col:5> 'std::ostream':'std::basic_ostream<char>' lvalue Var 0x1f6f558 'cout' 'std::ostream':'std::basic_ostream<char>'
+    | | `-ImplicitCastExpr 0x1f78630 <col:13> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x1f71888 <col:13> 'int' lvalue Var 0x1f6fae8 'a' 'int'
+    | `-ImplicitCastExpr 0x1f79070 <col:18> 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x1f79048 <col:18> 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' lvalue Function 0x1eda6f8 'endl' 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' (FunctionTemplate 0x1eb8038 'endl')
+    |-CXXOperatorCallExpr 0x1f7b918 <line:10:5, col:18> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    | |-ImplicitCastExpr 0x1f7b900 <col:15> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x1f7b8e0 <col:15> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' lvalue CXXMethod 0x1ed6018 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'
+    | |-CXXOperatorCallExpr 0x1f7af68 <col:5, col:13> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    | | |-ImplicitCastExpr 0x1f7af50 <col:10> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(int)' <FunctionToPointerDecay>
+    | | | `-DeclRefExpr 0x1f7af30 <col:10> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)' lvalue CXXMethod 0x1ed6f78 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'
+    | | |-DeclRefExpr 0x1f79158 <col:5> 'std::ostream':'std::basic_ostream<char>' lvalue Var 0x1f6f558 'cout' 'std::ostream':'std::basic_ostream<char>'
+    | | `-ImplicitCastExpr 0x1f7af18 <col:13> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x1f79178 <col:13> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    | `-ImplicitCastExpr 0x1f7b8c8 <col:18> 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0x1f7b8a0 <col:18> 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' lvalue Function 0x1eda6f8 'endl' 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' (FunctionTemplate 0x1eb8038 'endl')
+    |-WhileStmt 0x1f7d468 <line:11:5, line:17:5>
+    | |-BinaryOperator 0x1f7b9c0 <line:11:11, col:15> 'bool' '<'
+    | | |-ImplicitCastExpr 0x1f7b990 <col:11> 'int' <LValueToRValue>
+    | | | `-DeclRefExpr 0x1f7b950 <col:11> 'int' lvalue Var 0x1f6fbe8 'i' 'int'
+    | | `-ImplicitCastExpr 0x1f7b9a8 <col:15> 'int' <LValueToRValue>
+    | |   `-DeclRefExpr 0x1f7b970 <col:15> 'int' lvalue Var 0x1f6fce8 'n' 'int'
+    | `-CompoundStmt 0x1f7d430 <col:17, line:17:5>
+    |   |-BinaryOperator 0x1f7ba38 <line:12:9, col:13> 'int' lvalue '='
+    |   | |-DeclRefExpr 0x1f7b9e0 <col:9> 'int' lvalue Var 0x1f6fc68 't' 'int'
+    |   | `-ImplicitCastExpr 0x1f7ba20 <col:13> 'int' <LValueToRValue>
+    |   |   `-DeclRefExpr 0x1f7ba00 <col:13> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    |   |-BinaryOperator 0x1f7bb08 <line:13:9, col:17> 'int' lvalue '='
+    |   | |-DeclRefExpr 0x1f7ba58 <col:9> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    |   | `-BinaryOperator 0x1f7bae8 <col:13, col:17> 'int' '+'
+    |   |   |-ImplicitCastExpr 0x1f7bab8 <col:13> 'int' <LValueToRValue>
+    |   |   | `-DeclRefExpr 0x1f7ba78 <col:13> 'int' lvalue Var 0x1f6fae8 'a' 'int'
+    |   |   `-ImplicitCastExpr 0x1f7bad0 <col:17> 'int' <LValueToRValue>
+    |   |     `-DeclRefExpr 0x1f7ba98 <col:17> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    |   |-CXXOperatorCallExpr 0x1f7d2c8 <line:14:9, col:22> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    |   | |-ImplicitCastExpr 0x1f7d2b0 <col:19> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' <FunctionToPointerDecay>
+    |   | | `-DeclRefExpr 0x1f7d290 <col:19> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))' lvalue CXXMethod 0x1ed6018 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(std::basic_ostream<char, std::char_traits<char> >::__ostream_type &))'
+    |   | |-CXXOperatorCallExpr 0x1f7c918 <col:9, col:17> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type':'std::basic_ostream<char>' lvalue
+    |   | | |-ImplicitCastExpr 0x1f7c900 <col:14> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(*)(int)' <FunctionToPointerDecay>
+    |   | | | `-DeclRefExpr 0x1f7c8e0 <col:14> 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)' lvalue CXXMethod 0x1ed6f78 'operator<<' 'std::basic_ostream<char, std::char_traits<char> >::__ostream_type &(int)'
+    |   | | |-DeclRefExpr 0x1f7bb28 <col:9> 'std::ostream':'std::basic_ostream<char>' lvalue Var 0x1f6f558 'cout' 'std::ostream':'std::basic_ostream<char>'
+    |   | | `-ImplicitCastExpr 0x1f7c8c8 <col:17> 'int' <LValueToRValue>
+    |   | |   `-DeclRefExpr 0x1f7bb48 <col:17> 'int' lvalue Var 0x1f6fb68 'b' 'int'
+    |   | `-ImplicitCastExpr 0x1f7d278 <col:22> 'basic_ostream<char, std::char_traits<char> > &(*)(basic_ostream<char, std::char_traits<char> > &)' <FunctionToPointerDecay>
+    |   |   `-DeclRefExpr 0x1f7d250 <col:22> 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' lvalue Function 0x1eda6f8 'endl' 'basic_ostream<char, std::char_traits<char> > &(basic_ostream<char, std::char_traits<char> > &)' (FunctionTemplate 0x1eb8038 'endl')
+    |   |-BinaryOperator 0x1f7d358 <line:15:9, col:13> 'int' lvalue '='
+    |   | |-DeclRefExpr 0x1f7d300 <col:9> 'int' lvalue Var 0x1f6fae8 'a' 'int'
+    |   | `-ImplicitCastExpr 0x1f7d340 <col:13> 'int' <LValueToRValue>
+    |   |   `-DeclRefExpr 0x1f7d320 <col:13> 'int' lvalue Var 0x1f6fc68 't' 'int'
+    |   `-BinaryOperator 0x1f7d410 <line:16:9, col:17> 'int' lvalue '='
+    |     |-DeclRefExpr 0x1f7d378 <col:9> 'int' lvalue Var 0x1f6fbe8 'i' 'int'
+    |     `-BinaryOperator 0x1f7d3f0 <col:13, col:17> 'int' '+'
+    |       |-ImplicitCastExpr 0x1f7d3d8 <col:13> 'int' <LValueToRValue>
+    |       | `-DeclRefExpr 0x1f7d398 <col:13> 'int' lvalue Var 0x1f6fbe8 'i' 'int'
+    |       `-IntegerLiteral 0x1f7d3b8 <col:17> 'int' 1
+    `-ReturnStmt 0x1f7d4a0 <line:18:5, col:12>
+      `-IntegerLiteral 0x1f7d480 <col:12> 'int' 0
